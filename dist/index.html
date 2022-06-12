@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #board {
+            width: 450px;
+            height: 450px;
+            position: absolute;
+            display: flex;
+            left: 10%;
+            top: 15%;
+            flex-wrap: wrap;
+        }
+
+        #priev {
+            border: black solid 3px;
+            width: 150px;
+            position: absolute;
+            height: 50px;
+            justify-content: space-around;
+            display: flex;
+            top: 5%;
+            left: 20%;
+            align-items: center;
+        }
+
+        #wynik {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            border: black solid 3px;
+            position: absolute;
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+            top: 5%;
+            left: 2%;
+        }
+
+        #end {
+            width: 200px;
+            height: 100px;
+            font-size: 20px;
+            border: black solid 3px;
+            position: absolute;
+            justify-content: space-around;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            top: calc(50% - 50px);
+            left: calc(50% - 100px);
+        }
+
+        #endwynik {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #reset {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .divek {
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .kulka {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+
+        }
+
+        .biggerKulka {
+            width: 50px;
+            height: 50px;
+
+        }
+
+        .path {
+            background-color: blueviolet;
+        }
+
+        .wall {
+            background-color: black;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .violet {
+            background-color: violet;
+        }
+
+        .grey {
+            background-color: grey;
+        }
+    </style>
+
+<script defer src="bundle.js"></script></head>
+
+<body>
+    <div id="priev"></div>
+    <div id="wynik"></div>
+    <div id="end">
+        <div id="endwynik"></div>
+        <div id="reset"></div>
+    </div>
+    <div id="board"></div>
+
+</body>
+
+</html>
